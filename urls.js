@@ -1,16 +1,14 @@
 const WAITZ_URL = 'https://waitz.io/live/ucsc';
 
-
-
 const BASE_URL = 'https://nutrition.sa.ucsc.edu/longmenu.aspx?sName=UC+Santa+Cruz+Dining&locationNum='
-const locations = {
+const LOCATIONS = {
     'Cowell/Stevenson': '05&locationName=Cowell%2fStevenson+Dining+Hall&naFlag=1',
     'Crown/Merrill': '20&locationName=Crown%2fMerrill+Dining+Hall&naFlag=1',
     'Nine/Ten': '40&locationName=College+Nine%2fJohn+R.+Lewis+Dining+Hall&naFlag=1',
     'Porter/Kresge': '25&locationName=Porter%2fKresge+Dining+Hall&naFlag=1'
 }
 const MEAL_URL = '&WeeksMenus=UCSC+-+This+Week%27s+Menus&mealName=';
-MEALS = ['Breakfast', 'Lunch', 'Dinner', 'Late Night', 'Auto']  // Auto meal selects meal based on current time, implement later
+const MEALS = ['Breakfast', 'Lunch', 'Dinner', 'Late Night', 'Auto']  // Auto meal selects meal based on current time, implement later
 
 const DIVIDERS = [
     '-- Soups --', 
@@ -42,3 +40,5 @@ const EMOJIS = { // dict of emojis corresponding to each dietary restriction or 
     'shellfish': '🦐', 
     'nuts': '🥜',
 }
+
+module.exports = { WAITZ_URL, BASE_URL, LOCATIONS, MEAL_URL, MEALS, DIVIDERS, EMOJIS };
